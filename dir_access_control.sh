@@ -14,7 +14,7 @@
 
 ########################### ADD VARIABLES ######################################
 									                                                             #
-GROUPNAME=                                   #full path (Absolute)             #            
+GROUPNAME=                                                                     #            
                                                                                #
 DIRECTORYNAME=                               #full path (Absolute)             #
                                                                                #
@@ -26,6 +26,12 @@ declare -a USERS_LIST=(user1 user2 user3)
 ## Create the directory you want to users to access
 
 mkdir $DIRECTORYNAME
+
+################################################################################
+########################### ADD GROUP ########################################## 
+# Add option [-g XXXX] if you want to specify Group ID: XXXX is group number   #
+################################################################################
+groupadd $GROUPNAME
 
 ################################################################################
 #   Setting special permissions                                                #
