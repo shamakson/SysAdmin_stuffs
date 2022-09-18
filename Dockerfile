@@ -1,5 +1,7 @@
 FROM tomcat:8-jre11
 
+#Use hash to add comments
+
 #Remove default artefacts & replace with yours
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
